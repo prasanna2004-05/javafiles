@@ -2,18 +2,18 @@ import java.util.*;
 public class reverse
 {
 	public static void main(String[] args) {
-	   Stack st=new Stack<>();
-	   Scanner sc=new Scanner(System.in);
-	   String s=sc.nextLine();
-	   for(int i=0;i<s.length();i++)
-	   {
-	       st.push(s.charAt(i));
-	   }
-	   String a="";
-	   for(int i=0;i<s.length();i++)
-	   {
-	       a=a+st.pop();
-	   }
-	   System.out.println(a);
-	}
+	    Stack st=new Stack<> ();
+	    Scanner sc=new Scanner(System.in);
+	    String a=sc.nextLine();
+	    for(int i=0;i<a.length();i++)
+	    {
+	        st.push(a.charAt(i));
+	    }
+	    String b="";
+	    for(int i=0;i<a.length();i++)
+	    {
+	        b=b+st.pop();
+	    }
+	    System.out.println(b);
+}
 }
